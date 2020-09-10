@@ -4,49 +4,12 @@
 	background-color: $background-footer-color;
 	padding-top: 60px;
 	padding-bottom: 60px;
-}
 
-.footer .container {
-	display: flex;
-	align-items: baseline;
-}
-
-.footer .address {
-	margin-top: 20px;
-}
-
-.address .list-item:not(:last-child) {
-	margin-bottom: 9px;
-}
-.logo-second {
-	color: $primary-white-color;
-}
-
-.address .link {
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
-	color: $footer-text-color;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address .location.link {
-	font-size: 14px;
-	font-style: normal;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
-	color: $primary-white-color;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address .link:hover,
-.address .link:focus {
-	background-color: $accent-color;
-}
-
-.address .location.link:hover,
-.address .location.link:focus {
-	background-color: $accent-color;
+	& .button {
+		display: flex;
+		margin-left: 12px;
+		margin-top: 0px;
+	}
 }
 
 .footer-left {
@@ -61,27 +24,52 @@
 	margin-left: auto;
 }
 
+.address {
+	margin-top: 20px;
+
+	& .list-item:not(:last-child) {
+		margin-bottom: 9px;
+	}
+
+	& .link {
+		font-size: 14px;
+		line-height: 1.7;
+		letter-spacing: 0.03em;
+		color: $footer-text-color;
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			background-color: $accent-color;
+		}
+	}
+
+	& .location.link {
+		font-size: 14px;
+		font-style: normal;
+		line-height: 1.7;
+		letter-spacing: 0.03em;
+		color: $primary-white-color;
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			background-color: $accent-color;
+		}
+	}
+}
+
 .list.socials {
 	display: flex;
 }
 
-.footer .social-icon {
-	fill: $primary-white-color;
-}
-
-.footer .socials-list-item {
+.socials-list-item {
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
-}
 
-.socials-list-item:not(:last-child) {
-	margin-right: 10px;
-}
-
-.footer .button {
-	display: flex;
-	margin-left: 12px;
-	margin-top: 0px;
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 
 .action {

@@ -18,16 +18,21 @@
 	border-radius: 4px;
 
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-color: $accent-color;
+	}
 }
 
 .clients-logo {
 	fill: $icon-color;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-list-item-link:hover,
-.clients-list-item-link:focus {
-	border-color: $accent-color;
+	.clients-list-item-link:hover &,
+	.clients-list-item-link:focus & {
+		fill: $accent-color;
+	}
 }
 
 .clients-list-item-link:hover .clients-logo,
