@@ -4,17 +4,12 @@
 @import "./base/container";
 @import "./components/section";
 @import "./components/section-title";
-@import "./components/modal-window";
 @import "./components/logo";
 @import "./components/social-icon";
 @import "./components/button";
 
 @import "./layouts/header";
-@import "./layouts/hero";
-@import "./layouts/advantages";
-@import "./layouts/services";
-@import "./layouts/team";
-@import "./layouts/clients";
 @import "./layouts/footer";
+@import "./layouts/team";
 
-// @import "./layouts/portfolio";
+@import "./layouts/portfolio";

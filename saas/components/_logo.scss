@@ -4,14 +4,14 @@
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: $title-color;
-}
 
-.header .logo {
-	margin-right: 93px;
-}
+	.header & {
+		margin-right: 93px;
+	}
 
-.logo .logo-first {
-	color: $accent-color;
+	& .logo-first {
+		color: $accent-color;
+	}
 }
 
 .logo-second {
